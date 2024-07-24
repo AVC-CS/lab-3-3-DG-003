@@ -2,11 +2,20 @@ def main():
     num1 = int(input('Enter the first number: '))
     num2 = int(input('Enter the second number: '))
     num3 = int(input('Enter the third number: '))
-    """
-    Code Your Program here
-    """
 
-    print(f'The greates number is {maxnum}')
+    if (num1 > num2):
+        if (num1 > num3):
+            maxnum = num1
+        else:
+            maxnum = num3
+    else:
+        if (num2 > num3):
+            maxnum = num2
+        else:
+            maxnum = num3
+    
+
+    print(f'The greatest number is {maxnum}')
     ########################################
     # Do not delete the return statement
     ########################################
